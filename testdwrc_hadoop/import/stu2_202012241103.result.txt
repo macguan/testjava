@@ -1,0 +1,11 @@
+ start time : 20-12-24 上午11:03
+ end time : 20-12-24 上午11:03
+ Elapsed time :  0 Mins 0 Secs [481]
+ txt file lines : 15
+ correct lines : 14
+ error lines : 1
+ import template cfg code : cfg_001
+ import data file : ./import/stu2.txt
+ result file : ./import/stu2_202012241103.result.txt
+ log file : ./import/stu2_202012241103.log
+ error lines file : ./import/stu2_202012241103.errorline.txt

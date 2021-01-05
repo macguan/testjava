@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_171 (Oracle Corporation)
+Main-Class: cn.com.dwsoft.main.Bootstrap
+Class-Path: lib/jline-3.3.1.jar lib/lib/ojdbc8.jar lib/mysql-connector-java-8.0.16.jar lib/commons-collections-3.2.1.jar lib/commons-lang-2.4.jar lib/commons-io-1.4.jar lib/commons-logging-1.1.1.jar lib/ss_exception.jar

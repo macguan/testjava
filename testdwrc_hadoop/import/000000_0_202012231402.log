@@ -1,0 +1,30 @@
+-------------------check data file---------------------------------
+./import/000000_0
+data file exist.
+-------------------check cfg(import template) file-----------------
+/home/machinemonitor/localdata/ungit/testjava/testdwrc_guan/import/template/import_cfg_002.properties
+cfg file exist.
+----------------import template cfg---------------------------------
+CfgCode=cfg_002
+CfgName=cfg_002
+SplitChar=,
+DbTableName=stu1
+--------- column config: 
+sid|sid|varchar|1
+sname|sname|varchar|2
+age|age|int|3
+-------------------end---------------------------------------------
+-------------------start read txt file-----------------------------
+--------read from txt file. total correct count:3------------------
+sid:'11'|sname:'mac11'|age:31|
+sid:'22'|sname:'mac22'|age:32|
+sid:'33'|sname:'mac33'|age:33|
+--------read from txt file. total errot count:0--------------------
+-------------------start generate sql command----------------------
+insert into stu1 ( sid,sname,age ) values ( '11','mac11',31 )
+insert into stu1 ( sid,sname,age ) values ( '22','mac22',32 )
+insert into stu1 ( sid,sname,age ) values ( '33','mac33',33 )
+generate sql command. total count:3
+-------------------start insert------------------------------------
+execute insert. total count:3
+-------------------final complete----------------------------------

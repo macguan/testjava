@@ -1,0 +1,8 @@
+-------------------check data file---------------------------------
+./import/stu2.txt
+data file exist.
+-------------------check cfg(import template) file-----------------
+/home/machinemonitor/localdata/ungit/testjava/testdwrc_guan/import/template/import_cfg_001.properties
+cfg file exist.
+/home/machinemonitor/localdata/ungit/testjava/testdwrc_guan/import/template/import_cfg_001.properties error! splitchar must be bar(means |) or comma(means ,)
+-------------------final complete----------------------------------

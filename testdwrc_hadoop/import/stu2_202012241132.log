@@ -1,0 +1,69 @@
+-------------------check data file---------------------------------
+./import/stu2.txt
+data file exist.
+-------------------check cfg(import template) file-----------------
+/home/machinemonitor/localdata/ungit/testjava/testdwrc_guan/import/template/import_cfg_001.properties
+cfg file exist.
+----------------import template cfg---------------------------------
+CfgCode=cfg_001
+CfgName=cfg_001
+SplitChar=\|
+DbTableName=stu1
+disp_mode=true
+page_import_mode=true
+--------- column config: 
+sname|sname|varchar|1
+age|age|int|2
+sid|sid|varchar|3
+-------------------end---------------------------------------------
+-------------------start read txt file-----------------------------
+--------current read page:1--------------------------
+--- total correct count:4
+sname:'mac1'|age:11|sid:'a1'|
+sname:'mac2'|age:12|sid:'a2'|
+sname:'mac3'|age:13|sid:'a3'|
+sname:'mac4'|age:14|sid:'a4'|
+--- total errot count:1
+ddd
+insert into stu1 ( sname,age,sid ) values ( 'mac1',11,'a1' )
+insert into stu1 ( sname,age,sid ) values ( 'mac2',12,'a2' )
+insert into stu1 ( sname,age,sid ) values ( 'mac3',13,'a3' )
+insert into stu1 ( sname,age,sid ) values ( 'mac4',14,'a4' )
+--- generate sql command. total count:4
+--- execute insert. total count:4
+--------current read page:2--------------------------
+--- total correct count:5
+sname:'mac5'|age:15|sid:'a5'|
+sname:'mac6'|age:16|sid:'a6'|
+sname:'mac7'|age:17|sid:'a7'|
+sname:'mac8'|age:18|sid:'a8'|
+sname:'mac9'|age:19|sid:'a9'|
+--- total errot count:0
+insert into stu1 ( sname,age,sid ) values ( 'mac5',15,'a5' )
+insert into stu1 ( sname,age,sid ) values ( 'mac6',16,'a6' )
+insert into stu1 ( sname,age,sid ) values ( 'mac7',17,'a7' )
+insert into stu1 ( sname,age,sid ) values ( 'mac8',18,'a8' )
+insert into stu1 ( sname,age,sid ) values ( 'mac9',19,'a9' )
+--- generate sql command. total count:5
+--- execute insert. total count:5
+--------current read page:3--------------------------
+--- total correct count:5
+sname:'mac10'|age:20|sid:'a10'|
+sname:'mac11'|age:21|sid:'a11'|
+sname:'mac12'|age:22|sid:'a12'|
+sname:'mac13'|age:23|sid:'a13'|
+sname:'mac14'|age:24|sid:'a14'|
+--- total errot count:0
+insert into stu1 ( sname,age,sid ) values ( 'mac10',20,'a10' )
+insert into stu1 ( sname,age,sid ) values ( 'mac11',21,'a11' )
+insert into stu1 ( sname,age,sid ) values ( 'mac12',22,'a12' )
+insert into stu1 ( sname,age,sid ) values ( 'mac13',23,'a13' )
+insert into stu1 ( sname,age,sid ) values ( 'mac14',24,'a14' )
+--- generate sql command. total count:5
+--- execute insert. total count:5
+--------current read page:4--------------------------
+--- total correct count:0
+--- total errot count:0
+--- generate sql command. total count:0
+--- execute insert. total count:0
+-------------------final complete----------------------------------
